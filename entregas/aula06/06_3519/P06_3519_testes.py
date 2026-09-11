@@ -154,16 +154,16 @@ class TestFilaEncadeada(unittest.TestCase):
         self.assertEqual(mais_uma_fila.frente(), 'Olá')
 
         mais_uma_fila.desenfileirar()
-        self.assertEqual(mais_uma_fila.frente(),'Olá')
+        self.assertEqual(mais_uma_fila.frente(),100)
 
         mais_uma_fila.desenfileirar()
-        self.assertEqual(mais_uma_fila.frente(),'Olá')
+        self.assertEqual(mais_uma_fila.frente(),0.0000001)
 
         mais_uma_fila.enfileirar('PS2 > PS5')
-        self.assertEqual(mais_uma_fila.frente(),'Olá')
+        self.assertEqual(mais_uma_fila.frente(),0.0000001)
 
         mais_uma_fila.enfileirar(14)
-        self.assertEqual(mais_uma_fila.frente(), 'Olá')
+        self.assertEqual(mais_uma_fila.frente(), 0.0000001)
 
         mais_uma_fila.desenfileirar()
         mais_uma_fila.desenfileirar()
@@ -185,3 +185,7 @@ class TestFilaEncadeada(unittest.TestCase):
             self.assertEqual(fato, coisita)
 
         self.assertEqual(len(nova_fila), 0)
+
+
+if __name__ == '__main__':
+    unittest.main()
