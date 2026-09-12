@@ -1,0 +1,5 @@
+# Questão 2
+
+## Justificativa de exploração em profundidade (DFS) com backtracking
+
+Foi utilizada, na questão 2, uma busca em profundidade com backtracking. A escolha por tal busca se deu em razão de ser, pessoalmente, a opção mais intuitiva e facilmente aplicável, uma vez que foi semelhantemente utilizada durante a construção do próprio labirinto. Assim, ficou mais fácil de implementar o algortimo solucionador apenas com base no conheicmento adquirido na construção do labirinto perfeito. Como estamos trabalhando com um labirinto perfeito, não temos de nos preocupar com nenhum método que garanta a resolução por meio do caminho mais curto, pois dois vértices determinam um único caminho, de modo que a DFS não se torna desvantajosa. A implementação utiliza listas como se fossem pilhas para armazenas o ponto pai do qual partimos e, depois, armazenar, em ordem inversa, o caminho traçado até o queijo. 
